@@ -68,6 +68,23 @@ are able to:
   themed repositories, we are able to provide better examples that require combining multiple charts together.
 
 
+## How to deploy the index file
+
+The index file is automatically deployed from the `master` branch.
+
+Currently construction of the index file is a manual process. Eventually, this will be enhanced to automatically
+generate the index file when there is a new release in the source repositories.
+
+To add new charts:
+
+- Release a new version on the source repository containing the helm chart.
+- Wait for the CI build to append the index file and chart packages.
+- Download the generated index file.
+- Merge the index file with the existing one in this repo:
+    * If an entry already exists append the list entry to the existing one.
+    * For new entries, add to the `entries` map under the same heading.
+
+
 ## License
 
 Copyright (c) 2019 Gruntwork, Inc
