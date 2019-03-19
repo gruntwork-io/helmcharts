@@ -1,5 +1,16 @@
 # Gruntwork Helm Charts for Kubernetes
 
+This repository holds the index file for [the Gruntwork Helm Repository](https://helmcharts.gruntwork.io), served using
+[GitHub pages](https://pages.github.com/). The index file serves to hold the list of available helm charts distributed
+by Gruntwork, including the associated metadata that describes the charts. You can read more about the repository index
+file from the [official documentation](https://helm.sh/docs/developing_charts/#the-index-file).
+
+This repository does not contain any of the charts; only references to the charts that are stored in other GitHub
+repositories. You can find the list of repositories in the [Charts](#charts) section of this document. For information
+on the reasoning behind this setup, you can refer to the [Why are the charts in a different
+repository?](#why-are-the-charts-in-a-different-repository) section.
+
+
 ## How do you install the charts in this Repo?
 
 You can access these charts by adding the Gruntwork Helm Repo to your client:
@@ -42,6 +53,19 @@ the [gruntwork-io/helm-kubernetes-services](https://github.com/gruntwork-io/helm
 repository.
 
 - [k8s-service](https://github.com/gruntwork-io/helm-kubernetes-services/blob/master/charts/k8s-service)
+
+
+## Why are the charts in a different repository?
+
+The source code for the charts are managed in separate repositories. By storing the charts in separate repositories, we
+are able to:
+
+- Release and version the charts using GitHub releases. By doing so, we can setup a CI/CD pipeline that automatically
+  generates the chart package with a related index file.
+- Make testing easier. By having repositories that only manage a small number of charts, we are able to better test the
+  charts by having faster CI cycles.
+- Have examples and documentation that integrates multiple charts together. By having groups of charts under different
+  themed repositories, we are able to provide better examples that require combining multiple charts together.
 
 
 ## License
