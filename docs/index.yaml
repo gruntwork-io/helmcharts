@@ -157,4 +157,17 @@ entries:
     urls:
     - https://github.com/gruntwork-io/helm-kubernetes-services/releases/download/v0.0.12/k8s-service-v0.0.12.tgz
     version: v0.0.12
-generated: 2019-12-14T00:13:04.265484536Z
+  - apiVersion: v1
+    created: 2020-01-07T18:38:19.367146989Z
+    description: A Helm chart to package your application container for Kubernetes
+    digest: ffa9b0edc90cd6420e9badd4addaf84ae66e7f2762d447867cff605a13846e5e
+    home: https://github.com/gruntwork-io/helm-kubernetes-services
+    maintainers:
+    - email: info@gruntwork.io
+      name: Gruntwork
+      url: https://gruntwork.io
+    name: k8s-service
+    urls:
+    - https://github.com/gruntwork-io/helm-kubernetes-services/releases/download/v0.0.13/k8s-service-v0.0.13.tgz
+    version: v0.0.13
+generated: 2020-01-07T18:38:19.364404764Z
