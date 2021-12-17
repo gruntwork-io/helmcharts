@@ -23,7 +23,7 @@ Then, you can access any of the charts under the `gruntwork` name. For example, 
 searching for `gruntwork`:
 
 ```bash
-$ helm search gruntwork
+$ helm search repo gruntwork
 ```
 
 In general, each of the charts document the required and optional input values in the corresponding `values.yaml` file.
