@@ -470,4 +470,3 @@ entries:
     - https://github.com/gruntwork-io/helm-kubernetes-services/releases/download/v0.2.14/k8s-service-v0.2.14.tgz
     version: v0.2.14
 generated: "2022-08-12T05:28:53.231585478Z"
-
