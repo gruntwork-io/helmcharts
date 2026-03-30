@@ -651,4 +651,4 @@ entries:
     urls:
     - https://github.com/gruntwork-io/helm-kubernetes-services/releases/download/v0.2.29/k8s-service-v0.2.29.tgz
     version: v0.2.29
-generated: '2026-03-30T04:11:21.229Z'
+generated: '2026-03-30T11:53:26.490Z'
